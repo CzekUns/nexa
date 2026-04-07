@@ -149,13 +149,24 @@
     <div id="preventivoModal" class="modal-overlay">
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal()">&times;</span>
-            <h2 style="margin-bottom: 10px; color: var(--primary-dark);">Richiedi Preventivo</h2>
-            <p style="margin-bottom: 20px; font-size: 0.9rem; color: var(--text-muted);">Compila i campi per inviarci una mail di richiesta.</p>
+            <div class="modal-header">
+                <h2>Richiedi un Preventivo</h2>
+                <p>Lasciaci i tuoi dati e ti ricontatteremo al più presto.</p>
+            </div>
             <form action="mailto:nexaserramentisrls@gmail.com" method="GET" enctype="text/plain">
-                <input type="text" name="Nome" placeholder="Il tuo nome (obbligatorio)" required class="form-input">
-                <input type="tel" name="Telefono" placeholder="Il tuo numero di telefono" class="form-input">
-                <textarea name="Messaggio" placeholder="Descrivi di cosa hai bisogno..." required class="form-textarea"></textarea>
-                <button type="submit" class="btn-submit">Prepara Email</button>
+                <div class="form-group">
+                    <label class="form-label">Nome e Cognome</label>
+                    <input type="text" name="Nome" placeholder="Esempio: Mario Rossi" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Telefono</label>
+                    <input type="tel" name="Telefono" placeholder="Esempio: +39 333 1234567" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Messaggio</label>
+                    <textarea name="Messaggio" placeholder="Descrivi il tuo progetto (es. sostituzione infissi, zanzariere...)" required class="form-textarea"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Invia Richiesta</button>
             </form>
         </div>
     </div>
