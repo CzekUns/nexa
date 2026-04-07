@@ -60,38 +60,11 @@ body {
     margin-bottom: 2.5rem;
 }
 
-.logo-main {
-    font-size: 3.5rem;
-    font-weight: 900;
-    color: var(--text-white);
-    display: flex;
-    align-items: center;
-    letter-spacing: -1px;
-}
-
-.logo-x {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--accent-blue);
-    margin: 0 4px;
-}
-
-.logo-x svg {
-    width: 38px;
-    height: 38px;
-}
-
-.logo-sub {
-    font-size: 0.9rem;
-    font-weight: 400;
-    color: var(--text-white);
-    letter-spacing: 4px;
-    margin-top: -5px;
-}
-
-.logo-accent {
-    color: var(--accent-blue);
+.logo-img {
+    max-width: 320px;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3)); /* adds a slight shadow if it's placed on dark background for extra readability */
 }
 
 /* HERO TEXT */
