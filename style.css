@@ -442,7 +442,7 @@ body {
     box-shadow: none;
 }
 
-.form-status {
+.form-status-success, .form-status-error {
     margin-top: 1.5rem;
     padding: 1rem;
     border-radius: 10px;
@@ -452,15 +452,13 @@ body {
     line-height: 1.4;
 }
 
-.form-status.success {
-    display: block;
+.form-status-success {
     background: #f0fdf4;
     color: #166534;
     border: 1px solid #bbf7d0;
 }
 
-.form-status.error {
-    display: block;
+.form-status-error {
     background: #fef2f2;
     color: #991b1b;
     border: 1px solid #fee2e2;
