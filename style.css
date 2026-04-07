@@ -435,6 +435,37 @@ body {
     background: linear-gradient(135deg, #0088ff, #0066cc);
 }
 
+.btn-submit:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.form-status {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+    display: none;
+    line-height: 1.4;
+}
+
+.form-status.success {
+    display: block;
+    background: #f0fdf4;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+}
+
+.form-status.error {
+    display: block;
+    background: #fef2f2;
+    color: #991b1b;
+    border: 1px solid #fee2e2;
+}
+
 /* RESPONSIVE */
 @media (max-width: 1200px) {
     .hero-text-block h1 {
