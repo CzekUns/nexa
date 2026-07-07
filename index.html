@@ -86,19 +86,8 @@
       border-bottom: 1px solid rgba(255,255,255,.13);
     }
     .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 28px; }
-    .logo { width: 214px; display: inline-grid; gap: 2px; color: #fff; }
-    .logo-word { fill: currentColor; }
-    .logo-red { fill: var(--red); }
-    .logo-caption {
-      color: currentColor;
-      font-size: 10px;
-      font-weight: 900;
-      letter-spacing: 4.2px;
-      line-height: 1;
-      text-align: center;
-      text-transform: uppercase;
-      white-space: nowrap;
-    }
+    .logo { width: 176px; display: inline-flex; align-items: center; line-height: 0; }
+    .logo img { width: 100%; height: auto; }
     .nav { display: flex; align-items: center; gap: 30px; }
     .nav a:not(.button) { color: rgba(255,255,255,.8); font-size: 14px; font-weight: 700; }
     .nav a:not(.button):hover { color: #fff; }
@@ -316,8 +305,7 @@
     @media (max-width: 620px) {
       .container { width: min(calc(100% - 28px), var(--content)); }
       .site-header { min-height: 74px; }
-      .logo { width: 182px; }
-      .logo-caption { font-size: 8px; letter-spacing: 2.6px; }
+      .logo { width: 142px; }
       .nav { inset-top: 74px; }
       h1 { font-size: clamp(42px, 14vw, 62px); }
       section { padding: 80px 0; }
@@ -353,11 +341,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="#home" aria-label="Nexa Serramenti e Servizi">
-        <svg viewBox="0 0 335 72" aria-hidden="true">
-          <path class="logo-word" d="M8 71V13h10l34 40V13h13v58H54L21 32v39H8zm74 0V13h48v12H96v11h29v11H96v12h35v12H82zm129 0 24-30-22-28h17l14 18 14-18h17l-23 28 24 30h-17l-15-20-16 20h-17zm70 0 25-58h14l25 58h-15l-5-13h-25l-5 13h-14zm24-25h16l-8-20-8 20z"/>
-          <path class="logo-red" d="M210 13h17l16 21-9 11-24-32zm34 34 9-11 23 35h-17l-15-24z"/>
-        </svg>
-        <span class="logo-caption">Serramenti &amp; Servizi</span>
+        <img src="assets/nexa-logo.png" alt="Nexa Serramenti e Servizi">
       </a>
 
       <button class="menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false"><span></span></button>
@@ -496,11 +480,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a class="logo" href="#home" aria-label="Nexa Serramenti e Servizi">
-            <svg viewBox="0 0 335 72" aria-hidden="true">
-              <path class="logo-word" d="M8 71V13h10l34 40V13h13v58H54L21 32v39H8zm74 0V13h48v12H96v11h29v11H96v12h35v12H82zm129 0 24-30-22-28h17l14 18 14-18h17l-23 28 24 30h-17l-15-20-16 20h-17zm70 0 25-58h14l25 58h-15l-5-13h-25l-5 13h-14zm24-25h16l-8-20-8 20z"/>
-              <path class="logo-red" d="M210 13h17l16 21-9 11-24-32zm34 34 9-11 23 35h-17l-15-24z"/>
-            </svg>
-            <span class="logo-caption">Serramenti &amp; Servizi</span>
+            <img src="assets/nexa-logo.png" alt="Nexa Serramenti e Servizi">
           </a>
           <p>Serramenti e servizi per abitare meglio, con un unico interlocutore.</p>
         </div>
