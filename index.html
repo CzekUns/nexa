@@ -97,6 +97,7 @@
       line-height: 1;
       text-align: center;
       text-transform: uppercase;
+      white-space: nowrap;
     }
     .nav { display: flex; align-items: center; gap: 30px; }
     .nav a:not(.button) { color: rgba(255,255,255,.8); font-size: 14px; font-weight: 700; }
@@ -294,7 +295,7 @@
         inset: 84px 0 0;
         align-content: start;
         padding: 34px 24px;
-        background: rgba(23,25,27,.98);
+        background: var(--ink);
       }
       .nav.open { display: grid; }
       .nav a:not(.button) { padding: 8px 0; font-size: 19px; }
@@ -316,6 +317,7 @@
       .container { width: min(calc(100% - 28px), var(--content)); }
       .site-header { min-height: 74px; }
       .logo { width: 182px; }
+      .logo-caption { font-size: 8px; letter-spacing: 2.6px; }
       .nav { inset-top: 74px; }
       h1 { font-size: clamp(42px, 14vw, 62px); }
       section { padding: 80px 0; }
