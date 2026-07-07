@@ -82,26 +82,30 @@
       position: absolute;
       inset: 0 0 auto;
       z-index: 20;
-      color: #fff;
-      border-bottom: 1px solid rgba(255,255,255,.13);
+      color: var(--ink);
+      background: rgba(255,255,255,.94);
+      border-bottom: 1px solid rgba(23,25,27,.1);
+      box-shadow: 0 14px 40px rgba(0,0,0,.08);
+      backdrop-filter: blur(12px);
     }
     .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 28px; }
     .logo { width: 176px; display: inline-flex; align-items: center; line-height: 0; }
     .logo img { width: 100%; height: auto; }
     .nav { display: flex; align-items: center; gap: 30px; }
-    .nav a:not(.button) { color: rgba(255,255,255,.8); font-size: 14px; font-weight: 700; }
-    .nav a:not(.button):hover { color: #fff; }
-    .nav .button { min-height: 42px; padding: 9px 15px; border-color: rgba(255,255,255,.3); background: transparent; }
+    .nav a:not(.button) { color: rgba(23,25,27,.74); font-size: 14px; font-weight: 800; }
+    .nav a:not(.button):hover { color: var(--red); }
+    .nav .button { min-height: 42px; padding: 9px 15px; border-color: var(--red); background: var(--red); color: #fff; }
+    .nav .button:hover { background: var(--red-dark); border-color: var(--red-dark); }
     .menu-toggle {
       width: 44px;
       height: 44px;
       display: none;
       place-items: center;
       padding: 0;
-      border: 1px solid rgba(255,255,255,.28);
+      border: 1px solid rgba(23,25,27,.24);
       border-radius: 8px;
       background: transparent;
-      color: #fff;
+      color: var(--ink);
       cursor: pointer;
     }
     .menu-toggle span, .menu-toggle span::before, .menu-toggle span::after {
@@ -281,10 +285,17 @@
       .nav {
         display: none;
         position: fixed;
-        inset: 84px 0 0;
+        top: 84px;
+        right: 0;
+        bottom: auto;
+        left: 0;
+        z-index: 25;
+        min-height: calc(100dvh - 84px);
         align-content: start;
+        gap: 20px;
         padding: 34px 24px;
-        background: var(--ink);
+        background: var(--paper);
+        box-shadow: 0 28px 42px rgba(23,25,27,.16);
       }
       .nav.open { display: grid; }
       .nav a:not(.button) { padding: 8px 0; font-size: 19px; }
@@ -306,7 +317,7 @@
       .container { width: min(calc(100% - 28px), var(--content)); }
       .site-header { min-height: 74px; }
       .logo { width: 142px; }
-      .nav { inset-top: 74px; }
+      .nav { top: 74px; min-height: calc(100dvh - 74px); }
       h1 { font-size: clamp(42px, 14vw, 62px); }
       section { padding: 80px 0; }
       .hero { min-height: 680px; }
